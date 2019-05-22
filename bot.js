@@ -14,10 +14,10 @@ client.on('message', message => {
   if (message.author.id !== "454441083758182400") return;
 
   
-  if (message.content.startsWith(prefix + 'setwatch')) {
+  if (message.content.startsWith(prefix + 'w')) {
   client.user.setActivity(argresult, {type: 'WATCHING'})
      console.log('test' + argresult);
-    message.channel.sendMessage(`Watch Now: **${argresult}`)
+    message.channel.sendMessage(`WATCHING Now: ✔**${argresult}`)
 } 
 
  
